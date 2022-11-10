@@ -5,7 +5,7 @@ import Second from "./component/second";
 import Third from "./component/third";
 import Fourth from "./component/fourth";
 import Fifth from "./component/fifth";
-
+import Post from './component/posts';
 import New from './component/new'
 
 
@@ -25,8 +25,13 @@ function App() {
      <Fourth />
      <Fifth />
      <div>
-    </div>
     <New/>
+    </div>
+    <br />
+    <br />
+    <div>
+      <Post/>
+    </div>
     </div>
     
    
