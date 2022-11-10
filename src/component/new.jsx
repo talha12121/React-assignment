@@ -1,4 +1,4 @@
-const posts = [
+const users = [
     {
     "id": 1,
     "name": "Leanne Graham",
@@ -230,4 +230,48 @@ const posts = [
     }
     }
     ]
-    
+    function New(){
+        return(
+            <div>
+                <table border="2px" className="table">
+
+            <th>ID</th>
+            <th>NAME</th>
+            <th>USERNAME</th>
+            <th>EMAIL</th>
+            <th>ADDRESS</th>
+            <th>PHONE</th>
+            <th>WEBSITE</th>
+            <th>COMPANY</th>
+                </table>
+            
+        
+         {users.map((person) => {
+      return(
+        <table border="2" className="new">
+        <tr >
+                <td>{person.id}</td>
+                <td>{person.name}</td>
+                <td>{person.username}</td>
+                <td>{person.email}</td>
+                <td>{person.address.street}</td>
+                <td>{person.phone}</td>
+                <td>{person.website}</td>
+                <td>{person.company.name}</td>
+
+                </tr>
+        
+        </table>
+       
+      )
+} )}
+        </div>
+        )
+    }    
+    export default New;
+
+
+        
+
+
+ 

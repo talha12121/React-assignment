@@ -5,6 +5,19 @@
 .second{
   color: #61dafb;
 }
+.table th{
+  padding-left: 28px;
+}
+tr{
+  display: table-row;
+}
+.new{
+  box-sizing: border-box;
+  padding-left: 12px;
+}
+table > tr{
+  vertical-align: middle;
+}
 
 .App-logo {
   height: 40vmin;

@@ -6,6 +6,8 @@ import Third from "./component/third";
 import Fourth from "./component/fourth";
 import Fifth from "./component/fifth";
 
+import New from './component/new'
+
 
 
 
@@ -16,10 +18,21 @@ function App() {
     <div className="second">
     <Second />
     </div>
+    <div>
+    
+    </div>
      <Third />
      <Fourth />
      <Fifth />
+     <div>
     </div>
+    <New/>
+    </div>
+    
+   
+
+   
+    
   );
  
 }
