@@ -233,8 +233,8 @@ const users = [
     function New(){
         return(
             <div>
-                <table border="2px" className="table">
-
+        <table border="2px" className="table">
+            <tr>
             <th>ID</th>
             <th>NAME</th>
             <th>USERNAME</th>
@@ -243,28 +243,19 @@ const users = [
             <th>PHONE</th>
             <th>WEBSITE</th>
             <th>COMPANY</th>
-                </table>
-            
-        
-         {users.map((person) => {
-      return(
-        <table border="2" className="new">
-        <tr >
-                <td>{person.id}</td>
-                <td>{person.name}</td>
-                <td>{person.username}</td>
-                <td>{person.email}</td>
-                <td>{person.address.street}</td>
-                <td>{person.phone}</td>
-                <td>{person.website}</td>
-                <td>{person.company.name}</td>
-
-                </tr>
-        
+            </tr>
+         {users.map((users) => ( 
+        <tr>
+                <td>{users.id}</td>
+                <td>{users.name}</td>
+                <td>{users.username}</td>
+                <td>{users.email}</td>
+                <td>{users.address.street}</td>
+                <td>{users.phone}</td>
+                <td>{users.website}</td>
+                <td>{users.company.name}</td>
+        </tr>))}
         </table>
-       
-      )
-} )}
         </div>
         )
     }    

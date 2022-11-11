@@ -8,6 +8,12 @@
 .table th{
   padding-left: 28px;
 }
+.table1 th{
+  padding-left: 400px;
+  color: #282c34;
+  margin: 45px auto;
+  background: rgb(214, 16, 16);
+}
 tr{
   display: table-row;
 }

@@ -602,32 +602,33 @@ const post =[
     ]
     function Post(){
         return(
-            <div>
+           
                 <table border="2px" className="table">
+<tr>
 
             <th>ID</th>
             <th>TITLE</th>
             <th>POST</th>
          
-                </table>
+</tr>
+               
             
         
-         {post.map((person) => {
-      return(
-        <table border="2" className="new">
+         {post.map((person) => 
+      (
             
         <tr >
                 <td>{person.id}</td>
                 <td>{person.title}</td>
                 <td>{person.body}</td>
-                </tr>
+                </tr>))}
         
         </table>
        
-      )
-} )}
-        </div>
-        )
-    }    
+      
+)} 
+      
+        
+     
     export default Post;
     
